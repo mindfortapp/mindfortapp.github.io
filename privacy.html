@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Privacy Policy - MindFort</title>
-  <meta name="description" content="MindFort privacy policy. MindFort does not collect, store, or transmit personal data to external servers.">
+  <title>Privacy policy - MindFort</title>
+  <meta name="description" content="MindFort privacy policy for local storage, Screen Time, Mac protection, notifications, and private iCloud sync.">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -17,51 +17,67 @@
       <a href="privacy.html">Privacy</a>
       <a href="support.html">Support</a>
       <a href="terms.html">Terms</a>
+      <span class="language-switch" aria-label="Language selection">
+        <span class="language-current">EN</span>
+        <span aria-hidden="true">/</span>
+        <a href="tr-privacy.html" lang="tr" hreflang="tr">TR</a>
+      </span>
     </nav>
   </header>
 
   <main class="shell legal">
-    <div class="eyebrow">Privacy Policy</div>
-    <h1>Privacy Policy</h1>
-    <p>Last updated: March 2026</p>
+    <h1>Privacy policy</h1>
+    <p>Last updated: October 2026</p>
 
     <section>
-      <h2>Data Collection</h2>
-      <p>MindFort does not collect, store, or transmit any personal data to external servers. All your data, including focus sessions, profiles, schedules, and statistics, is stored locally on your device using Apple's SwiftData framework.</p>
+      <h2>Data collection</h2>
+      <p>MindFort does not operate a separate account system or send your app data to servers controlled by the MindFort developer. Profiles, schedules, limit definitions, focus session history, and cross-device focus records are stored privately on your device. When iCloud is available, these supported records can sync privately between devices using the same Apple Account. Detailed Screen Time reports stay on the device that provides them.</p>
     </section>
 
     <section>
-      <h2>Screen Time API</h2>
-      <p>MindFort uses Apple's FamilyControls and ManagedSettings frameworks to block apps during focus sessions. This requires your explicit permission. App selection tokens are opaque and cannot be reversed to identify specific apps.</p>
+      <h2>Screen Time and usage data</h2>
+      <p>On iPhone and iPad, MindFort uses Apple's Screen Time controls to protect selected apps, app categories, and supported websites during focus sessions and after a daily limit is reached. This requires your explicit permission. Apple represents your selections with protected system identifiers, so MindFort cannot use them to learn which specific apps you chose.</p>
+      <p>Apple processes detailed app and category usage inside a private Screen Time report on your device. MindFort can display the durations and pickup counts from that report without copying app- or category-level details into its iCloud sync data.</p>
+      <p>MindFort can also keep a local daily estimate of how often its block screen appeared so it can show your focus statistics. The system may count one blocked attempt more than once, so these numbers are estimates. They stay on that device and are not sent to the developer for analytics.</p>
     </section>
 
     <section>
-      <h2>App Group Storage</h2>
-      <p>Some data is shared between the main app and its extensions, including the shield screen, activity monitor, widgets, and Live Activities, via a local App Group container. This data never leaves your device.</p>
+      <h2>Mac app and website protection</h2>
+      <p>On Mac, protection can close the native apps you select during a focus session or after a daily limit is reached. Website protection uses built-in macOS protection and, in supported browsers, Automation access to identify the current page and show MindFort's local block page. These selections and checks are used only to provide protection on your Mac and are not sent to the MindFort developer.</p>
     </section>
 
     <section>
-      <h2>Analytics & Tracking</h2>
-      <p>MindFort contains no analytics SDKs, no crash reporting services, and no advertising frameworks. We do not track your behavior in any way.</p>
+      <h2>Local app data</h2>
+      <p>Features that work together on one device—including the block screen, activity monitoring, widgets, and Live Activities—share the information they need in protected local storage. This local information is separate from the supported records that may sync through iCloud.</p>
+    </section>
+
+    <section>
+      <h2>Analytics and tracking</h2>
+      <p>MindFort does not include third-party analytics, crash reporting, or advertising. The on-device Screen Time measurements and local block-screen estimates described above are used only to show you personal insights. They are not sent to the MindFort developer or any developer-operated analytics service.</p>
     </section>
 
     <section>
       <h2>Notifications</h2>
-      <p>Local notifications are used to remind you about session starts, session ends, and focus progress. These are processed entirely on-device and are not sent through any external service.</p>
+      <p>Local notifications are used for session starts and ends, a reminder shortly before a session ends, active open-ended focus sessions, cross-device focus requests, daily-limit status, and the optional weekly focus report. They are processed on-device and are not sent through a developer-operated notification service.</p>
     </section>
 
     <section>
-      <h2>Third-Party Services</h2>
-      <p>MindFort uses zero third-party services. The app is built with Apple's native frameworks and does not send data to external services.</p>
+      <h2>Third-party services</h2>
+      <p>MindFort contains no third-party analytics, advertising, or developer-operated cloud service. It uses Apple's built-in services, including iCloud for optional private sync. Apple's privacy terms apply to data processed by Apple services.</p>
     </section>
 
     <section>
-      <h2>Children's Privacy</h2>
-      <p>MindFort is designed for personal adult use. It uses FamilyControls individual authorization, not child or parental controls.</p>
+      <h2>Data retention and deletion</h2>
+      <p>Deleting MindFort removes its local app data from that device. Data already synced to iCloud is not automatically deleted when you delete the app; it may remain in iCloud and sync again after reinstalling MindFort or using another signed-in device. You can manage or delete MindFort's iCloud data from your Apple Account's iCloud storage settings. Menu names may vary by operating-system version.</p>
     </section>
 
     <section>
-      <h2>Changes to This Policy</h2>
+      <h2>Children's privacy</h2>
+      <p>MindFort is designed for personal adult use. It requests individual Screen Time permission and does not provide child or parental controls.</p>
+    </section>
+
+    <section>
+      <h2>Changes to this policy</h2>
       <p>We may update this policy from time to time. Any changes will be reflected in the app update notes and on this page.</p>
     </section>
 

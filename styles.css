@@ -88,6 +88,26 @@ a {
   text-decoration: none;
 }
 
+.language-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 9px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 750;
+}
+
+.language-switch a {
+  color: var(--accent-strong);
+}
+
+.language-current {
+  color: var(--text);
+}
+
 .hero {
   display: grid;
   grid-template-columns: minmax(0, 1.06fr) minmax(300px, 0.94fr);
@@ -154,6 +174,139 @@ h1 {
   border-color: transparent;
   background: linear-gradient(135deg, var(--accent), var(--mint));
   color: white;
+}
+
+@media (prefers-color-scheme: dark) {
+  /* The dark accent is a light mint; white text on it is unreadable. */
+  .button.primary {
+    color: #0f1a15;
+  }
+}
+
+.store-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+/* Badge-shaped download links: high contrast against either theme, the
+   store name as the strong line, matching widths so neither reads as
+   secondary. */
+.store-button {
+  --store-bg: #111614;
+  --store-fg: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 212px;
+  min-height: 58px;
+  padding: 8px 22px 8px 16px;
+  border-radius: 12px;
+  background: var(--store-bg);
+  color: var(--store-fg);
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  box-shadow: 0 10px 26px rgba(17, 22, 20, 0.18);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.store-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 14px 32px rgba(17, 22, 20, 0.26);
+}
+
+.store-button:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.store-button svg {
+  flex: none;
+  width: 28px;
+  height: 28px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.store-button span {
+  display: flex;
+  flex-direction: column;
+}
+
+.store-button small {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  opacity: 0.78;
+}
+
+@media (prefers-color-scheme: dark) {
+  .store-button {
+    --store-bg: #f2f7f4;
+    --store-fg: #0f1a15;
+    box-shadow: 0 10px 26px rgba(0, 0, 0, 0.35);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .store-button {
+    transition: none;
+  }
+
+  .store-button:hover {
+    transform: none;
+  }
+}
+
+.fine-print {
+  margin-top: 16px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.hero-shot {
+  margin: 0;
+  justify-self: center;
+  width: min(100%, 360px);
+}
+
+.hero-shot img,
+.mac-shots img,
+.gallery img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 22px;
+  box-shadow: var(--shadow);
+}
+
+.mac-shots {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 24px;
+}
+
+.mac-shots img {
+  border-radius: 12px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.gallery img {
+  border-radius: 16px;
 }
 
 .phone {
@@ -304,8 +457,17 @@ h1 {
     min-height: 480px;
   }
 
-  .grid {
+  .grid,
+  .mac-shots {
     grid-template-columns: 1fr;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .hero-shot {
+    width: min(100%, 300px);
   }
 }
 
@@ -323,6 +485,10 @@ h1 {
     font-size: 17px;
   }
 
+  .store-button {
+    flex: 1 1 100%;
+  }
+
   .phone {
     border-radius: 30px;
     padding: 16px;
@@ -332,4 +498,3 @@ h1 {
     font-size: 46px;
   }
 }
-

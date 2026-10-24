@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Support - MindFort</title>
-  <meta name="description" content="MindFort support, review notes, and contact information.">
+  <meta name="description" content="MindFort help for focus sessions, profiles, schedules, daily limits, Screen Time, Mac protection, and private cross-device sync.">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -17,48 +17,67 @@
       <a href="privacy.html">Privacy</a>
       <a href="support.html">Support</a>
       <a href="terms.html">Terms</a>
+      <span class="language-switch" aria-label="Language selection">
+        <span class="language-current">EN</span>
+        <span aria-hidden="true">/</span>
+        <a href="tr-support.html" lang="tr" hreflang="tr">TR</a>
+      </span>
     </nav>
   </header>
 
   <main class="shell legal">
-    <div class="eyebrow">Support</div>
-    <h1>MindFort Support</h1>
+    <h1>MindFort support</h1>
     <p>For help with MindFort, contact <a href="mailto:sfkrgz@gmail.com">sfkrgz@gmail.com</a>.</p>
 
-    <div class="notice">
-      <strong>App Review Note:</strong> MindFort is a focus and distraction-blocking app using Apple's Screen Time, Family Controls, DeviceActivity, ManagedSettings, ShieldAction, and ShieldConfiguration frameworks. No account is required.
-    </div>
-
     <section>
-      <h2>How to Use MindFort</h2>
+      <h2>How to use MindFort</h2>
       <ol>
         <li>Launch the app and complete onboarding.</li>
-        <li>Grant Screen Time permission when prompted.</li>
+        <li>On iPhone or iPad, grant Screen Time permission when prompted.</li>
         <li>Create a focus profile or choose a template.</li>
-        <li>Select apps, app categories, or Safari website domains to block.</li>
-        <li>Start a focus session from the Focus tab.</li>
+        <li>Select apps, app categories, or websites that are compatible with the current device.</li>
+        <li>Start a timed or open-ended focus session from the Focus tab.</li>
+        <li>Choose whether to start only on this device or start here and ask MindFort to try your other devices.</li>
         <li>Use Schedules to automate blocking by day and time.</li>
+        <li>Use Limits to set a daily time limit or a fixed number of timed opens.</li>
+        <li>On iPhone or iPad, open Actual Screen Time to review day, week, month, or year.</li>
+        <li>Turn on the weekly focus report in Settings if you want a summary each week.</li>
       </ol>
     </section>
 
     <section>
-      <h2>Screen Time Permission</h2>
-      <p>Blocking requires Apple's Screen Time permission. MindFort cannot block selected apps until permission is granted by the user.</p>
+      <h2>Screen Time permission</h2>
+      <p>On iPhone and iPad, app, category, and supported website protection requires Apple's Screen Time permission. MindFort cannot protect those selections on a device until permission is granted there.</p>
+      <p>Actual Screen Time is also available on iPhone and iPad. Apple's private report calculates app and category durations and pickup counts on the device. MindFort can additionally keep local estimates of how often its block screen appeared for your own focus statistics. These measurements are not sent to the MindFort developer or a developer-operated analytics service.</p>
     </section>
 
     <section>
-      <h2>Website and Browser Blocking</h2>
-      <p>Safari website restrictions are supported for website domains. To block Chrome, Firefox, Opera, or other browsers, select those browser apps in a focus profile.</p>
+      <h2>Mac app and website protection</h2>
+      <p>On Mac, MindFort can close selected native applications while focus protection is active. This selection is local to the Mac and is separate from iPhone and iPad Screen Time selections.</p>
+      <p>Mac website protection uses built-in network controls and MindFort's support for compatible browsers. The first use may require approval in macOS System Settings and Automation access. Firefox can still be blocked but may show its own error page instead of the MindFort block page. Network privacy settings such as Private Relay or encrypted DNS can prevent website protection in some configurations.</p>
     </section>
 
     <section>
-      <h2>Data and Account Deletion</h2>
-      <p>MindFort does not require an account and does not store data on external servers. To delete local MindFort data, delete the app from the device. iOS removes the app's local data with the app.</p>
+      <h2>Daily limits</h2>
+      <p>A time limit tracks daily use for the selected profile until the set duration is reached. Timed opens provide a fixed number of temporary access periods. Limit definitions can sync through iCloud, but each device measures its own use and applies protection separately.</p>
     </section>
 
     <section>
-      <h2>Purchases</h2>
-      <p>The initial submitted build does not include active in-app purchases, subscriptions, paywalls, or paid feature locks. All visible features in the submitted build are available without purchase.</p>
+      <h2>Difficulty levels</h2>
+      <p>Easy sessions can end immediately. Medium sessions add a 30-second pause before ending. Hard Mode can only be ended early with an Emergency Pass; each device gets 3 Emergency Passes per day.</p>
+      <p>Easy and Medium sessions include 3 breaks per day on each device. Use <strong>Take a break</strong> in the app or on the Live Activity; the block screen shows how many breaks are left. Breaks are not offered in Hard Mode or during a schedule. Emergency Passes and breaks are counted separately on every device and reset each day.</p>
+    </section>
+
+    <section>
+      <h2>Focus across devices</h2>
+      <p><strong>Start on this device</strong> affects only the current device. <strong>Start here and try other devices</strong> sends an automatic start request to other MindFort devices signed in to the same Apple Account. A device starts only after the change reaches it and the synced profile, compatible local selections, required permission, and no conflicting focus are ready there.</p>
+      <p><strong>Stop on this device</strong> ends only local protection. <strong>Stop on all active devices</strong> ends the shared focus for every device taking part. iCloud delivery is asynchronous, so MindFort does not claim that an idle device is currently online or fully up to date.</p>
+    </section>
+
+    <section>
+      <h2>Data and account deletion</h2>
+      <p>MindFort does not require a separate MindFort account. Profiles, schedules, limit definitions, focus session history, and cross-device focus records can sync privately through iCloud between devices using the same Apple Account. Detailed Screen Time reports remain on the device that provides them.</p>
+      <p>Deleting the app removes its local data from that device, but it does not automatically delete data already synchronized to iCloud. That data may synchronize again after a reinstall or on another signed-in device. To remove the cloud copy, manage or delete MindFort data from your Apple Account's iCloud storage settings; exact menu names vary by operating-system version.</p>
     </section>
   </main>
 
